@@ -56,12 +56,12 @@ background-attachment: fixed;
 }
 
 .section-dark {
-	background-color: #54c3c0;
+	background-color: #e60b8a;
 	color: white;
 }
 
 #Why_Cleveland {
-background-color: #4cb549;
+background-color:#54c3c0;
 color: white;
 }
 
@@ -76,7 +76,7 @@ color: white;
 	text-transform: uppercase;
 }
 
- .ptext .border{
+.ptext .border{
 	background-color: black;
 	color: #fff;
 	padding: 20px; 
