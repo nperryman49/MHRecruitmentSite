@@ -96,7 +96,25 @@ color: white;
 	background-attachment: scroll;	
     }
 }
-
+@media(max-width:640px){
+	/*
+		Makes text more readable.
+		Tried to position img1 but still looks the same :P
+	*/
+	.border{
+		line-height: 50px;
+		
+	}
+	body{
+		font-size:12px;
+	}
+	.pimg1{
+		width:100%;
+		max-height:auto;
+		background-attachment: scroll;
+		
+	}
+}
 footer ul {
 list-style-type: none;
 }
