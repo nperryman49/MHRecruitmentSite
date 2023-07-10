@@ -1,0 +1,102 @@
+* {
+font-family: "Arial", sans-serif;
+}
+
+body, html {
+	height: 100%;
+	margin: 0;
+	font-size: 16px;
+	font-family: "Brown", "Arial" sans-serif;
+	font-weight: 400;
+	line-height: 1.8em;
+	color: #54c3c0;
+	background-color: 902683;
+}
+
+.pimg1, .pimg2, .pimg3{
+	position: relative;
+	opacity: 0.70;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+
+/*	fixed = parallax
+	scroll = normal
+*/
+background-attachment: fixed;
+}
+
+.pimg1 {
+	background-image:url('/images/glickcenter.jpeg');
+	min-height: 100%;
+}
+
+.pimg2 {
+	background-image:url('/images/cleveland-skyline-feat.jpeg');
+	min-height: 400px;
+}
+
+.pimg3 {
+	background-image: url('/images/oldbuilding.jpeg');
+	min-height: 400px;
+}
+
+.section {
+	text-align: center;
+	padding: 50px 80px;
+	color: #f4f4f4;
+	font-family: "Brown", "Arial" sans-serif;
+}
+
+.section-light{
+	background-color: #632d80;
+	color: #f4f4f4;
+	font-family: "Brown", "Arial" sans-serif;
+}
+
+.section-dark {
+	background-color: #54c3c0;
+	color: #white;
+}
+
+#Why_Cleveland {
+background-color: #4cb549;
+color: white;
+}
+
+.ptext {
+	position: absolute;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: black;
+	font-size: 27px;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+}
+
+ .ptext .border{
+	background-color: black;
+	color: #fff;
+	padding: 20px; 
+}
+
+.ptext .border.trans{
+	background-color: black;
+	color: white;
+}
+
+.last_border {
+ display: none;
+}
+
+@media(max-width:568px){
+	.pimg1, .pimg2, .pimg3{
+	background-attachment: scroll;	
+    }
+}
+
+footer ul {
+list-style-type: none;
+}
