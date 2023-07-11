@@ -1,121 +1,138 @@
 * {
-font-family: "Arial", sans-serif;
-}
-
-body, html {
-	height: 100%;
-	margin: 0;
-	font-size: 16px;
-	font-family: "Brown", "Arial" sans-serif;
-	font-weight: 400;
-	line-height: 1.8em;
-	color: #54c3c0;
-	background-color: 902683;
-}
-
-.pimg1, .pimg2, .pimg3{
-	position: relative;
-	opacity: 0.70;
-	background-position: center;
-	background-size: cover;
-	background-repeat: no-repeat;
-
-
-/*	fixed = parallax
-	scroll = normal
-*/
-background-attachment: fixed;
-}
-
-.pimg1 {
-	background-image:url('/images/glickcenter.jpeg');
-	min-height: 100%;
-}
-
-.pimg2 {
-	background-image:url('/images/cleveland-skyline-feat.jpeg');
-	min-height: 400px;
-}
-
-.pimg3 {
-	background-image: url('/images/oldbuilding.jpeg');
-	min-height: 400px;
-}
-
-.section {
-	text-align: center;
-	padding: 50px 80px;
-	color: #f4f4f4;
-	font-family: "Brown", "Arial" sans-serif;
-}
-
-.section-light{
-	background-color: #632d80;
-	color: #f4f4f4;
-	font-family: "Brown", "Arial" sans-serif;
-}
-
-.section-dark {
-	background-color: #e60b8a;
-	color: white;
-}
-
-#Why_Cleveland {
-background-color:#54c3c0;
-color: white;
-}
-
-.ptext {
-	position: absolute;
-	top: 50%;
-	width: 100%;
-	text-align: center;
-	color: black;
-	font-size: 27px;
-	letter-spacing: 8px;
-	text-transform: uppercase;
-}
-
-.ptext .border{
-	background-color: black;
-	color: #fff;
-	padding: 20px; 
-}
-
-.ptext .border.trans{
-	background-color: black;
-	color: white;
-}
-
-.last_border {
- display: none;
-}
-
-
-@media(max-width:568px){
-	.pimg1, .pimg2, .pimg3{
-	background-attachment: scroll;	
-    }
-}
-@media(max-width:640px){
-	/*
-		Makes text more readable.
-		Tried to position img1 but still looks the same :P
-	*/
-	.border{
+	font-family: "Arial", sans-serif;
+	}
+	
+	.header {
+		height: 50px;
+		background-color: lightgray;
+		display: flex;
+		
+	}
+	.header img{
+		float: left;
+	}
+	
+	.navbar ul {
+		display: flex;
+		justify-content: space-around;
+		height: 50px;
+		background-color: #19226d;
+		list-style-type: none;
+		padding: 0px;
+		margin: 0px;
+		
+	}
+	.navbar a {
+		display: block;
+		color: white; 
+		text-decoration: none;
+		text-align: center;
+		font-size: 20px;
 		line-height: 50px;
-		
+		padding: 0px 15px;			
 	}
-	body{
-		font-size:12px;
+	
+	.navbar a:hover {
+		background: #ddd;
+		color: black;
 	}
-	.pimg1{
-		width:100%;
-		max-height:auto;
-		background-attachment: scroll;
-		
+	
+	body, html {
+		height: 100%;
+		margin: 0;
+		font-size: 16px;
+		font-family: "Brown", "Arial" sans-serif;
+		font-weight: 400;
+		line-height: 1.8em;
+		color: #54c3c0;
+		background-color: 902683;
 	}
-}
-footer ul {
-list-style-type: none;
-}
+	
+	.pimg1, .pimg2, .pimg3{
+		position: relative;
+		opacity: 0.70;
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	
+	
+	/*	fixed = parallax
+		scroll = normal
+	*/
+	background-attachment: fixed;
+	}
+	
+	.pimg1 {
+		background-image:url('/images/glickcenter.jpeg');
+		min-height: 100%;
+	}
+	
+	.pimg2 {
+		background-image:url('/images/cleveland-skyline-feat.jpeg');
+		min-height: 400px;
+	}
+	
+	.pimg3 {
+		background-image: url('/images/oldbuilding.jpeg');
+		min-height: 400px;
+	}
+	
+	.section {
+		text-align: center;
+		padding: 50px 80px;
+		color: #f4f4f4;
+		font-family: "Brown", "Arial" sans-serif;
+	}
+	
+	.section-light{
+		background-color: #632d80;
+		color: #f4f4f4;
+		font-family: "Brown", "Arial" sans-serif;
+	}
+	
+	.section-dark {
+		background-color: #e60b8a;
+		color: white;
+	}
+	
+	#Why_Cleveland {
+	background-color:#54c3c0;
+	color: white;
+	}
+	
+	.ptext {
+		position: absolute;
+		top: 50%;
+		width: 100%;
+		text-align: center;
+		color: black;
+		font-size: 27px;
+		letter-spacing: 8px;
+		text-transform: uppercase;
+	}
+	
+	.ptext .border{
+		background-color: black;
+		color: #fff;
+		padding: 20px; 
+	}
+	
+	.ptext .border.trans{
+		background-color: black;
+		color: white;
+	}
+	
+	.last_border {
+	 display: none;
+	}
+	
+	@media(max-width:568px){
+		.pimg1, .pimg2, .pimg3{
+		background-attachment: scroll;	
+		}
+	}
+	
+	footer ul {
+	list-style-type: none;
+	}
+	
