@@ -11,6 +11,25 @@
 	.header img{
 		float: left;
 	}
+
+	.icon-nav {
+		display: flex;
+		float: right;
+		list-style-type: none;
+				
+	}
+	.icon {
+		padding: 1em 10px;
+		display: block;
+		align-items: center;
+		line-height: auto;
+		
+	}
+	
+	.icon hover {
+		opacity: .7;
+		
+	}
 	
 	.navbar ul {
 		display: flex;
