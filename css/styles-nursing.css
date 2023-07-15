@@ -1,0 +1,351 @@
+*body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+    
+    .header {
+        height: 50px;
+        background-color: lightgray;
+        display: flex;
+        width: auto;
+                  
+    }
+    
+    .header img{
+        float: left;
+    }
+    header ul {
+        display: flex;
+        float: right;
+        list-style-type: none;
+        line-height: 50px;
+        align-items: center;
+        padding-left: 70%;		
+        margin-right: 15%;
+             
+    }
+    
+    .icon {
+        padding: 1em 10px;
+            
+    }
+    
+    
+    .icon hover {
+        opacity: .7;
+        
+    }
+    
+    .navbar ul {
+        display: flex;
+        justify-content: space-around;
+        height: 40px;
+        background-color: #19226d;
+        list-style-type: none;
+        padding: 0px 1em;
+        margin: 0px;
+        width:auto;
+        
+    }
+    .navbar a {
+        display: block;
+        color: white; 
+        text-decoration: none;
+        text-align: center;
+        font-size: 18px;
+        line-height: 40px;
+        padding: 0px 15px;			
+    }
+    
+    .navbar a:hover {
+        background: #ddd;
+        color: black;
+    }
+    
+   
+
+    .slider-container {
+        max-width: fit-content;
+        position: relative;
+        justify-content: center;
+        margin: auto;
+        height: 600px;
+
+    }
+
+    .slideWrap {
+        position: relative;
+        list-style: none;
+        height: 100%;
+        width: fit-content;
+        padding: 0;
+        margin: 0;
+        justify-content: center;
+
+    }
+
+    .mySlides {
+        position: relative;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        
+    }
+
+    .mySlides img {
+        width: 100%;
+        height: 100%;
+
+    }
+    #previous,#next {
+        cursor: pointer;
+        position: absolute;
+        font-size: 1.5rem;
+        text-align: center;
+        top:40%;
+        width: 40px; 
+        line-height: 40px;
+        color: white;
+        text-decoration: none;
+        transition: 150ms;
+        border-radius: 50%;
+    }
+    #previous {
+        left: 10px;
+    }
+    #next {
+        right: 10px;
+    }
+
+    #previous:hover, #next:hover{
+        background-color: rgba(0,0,0,0.5);
+    }
+   .dot{
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 5px;
+        border-radius: 50%;
+        display: inline-flex;
+        background-color: lightgray;
+        
+        
+       
+   }
+
+   .active, .dot:hover{
+        background-color:#19226d;
+   }
+    #nursinglinkdiv {
+        background-color: #632d80;
+        color: white;
+        line-height: 2em;
+        padding: .25em;
+       
+    }
+    #nursinglinkdiv ul {
+        list-style-type: none;
+        justify-content: space-around;
+        display: flex;
+        
+    }
+
+    .nursinglink {
+        background-color: #54c3c0;
+        border-radius: 10px 10px;
+        
+        }
+
+    .nursinglink a{
+        text-decoration: none;
+        margin: 0 .5em;
+        color: black;
+        line-height: auto;
+        align-items: center;
+        
+    }
+    .nursinglink a:hover {
+        color: white;
+        
+    }
+
+   body, html {
+	height: 100%;
+	margin: 0;
+	font-size: 16px;
+	font-family:"Arial", sans-serif;
+	font-weight: 400;
+	line-height: 1.8em;
+	color: #54c3c0;
+	background-color: 902683;
+}
+
+.research {
+    color: white;
+    background-color: black;
+}
+
+.pimg1, .pimg2, .pimg3{
+	position: relative;
+	opacity: 0.70;
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+
+/*	fixed = parallax
+	scroll = normal
+*/
+background-attachment: fixed;
+}
+
+.pimg1 {
+	background-image:url('../MHRecruitmentSite/images/glickcenter.jpeg');
+	min-height: 50%;
+    
+}
+
+.pimg2 {
+	background-image:url('../MHRecruitmentSite/images/cleveland-skyline-feat.jpeg');
+	min-height: 50%;
+}
+
+.pimg3 {
+	background-image: url('../MHRecruitmentSite/images/oldbuilding.jpeg');
+	min-height: 50%;
+}
+
+.section {
+	
+    text-align: center;
+	padding: 20px 20px;
+	color: #f4f4f4;
+	font-family: "Brown", "Arial" sans-serif;
+}
+
+.section-light{
+	background-color: #632d80;
+	color: #f4f4f4;
+	font-family: "Brown", "Arial" sans-serif;
+}
+
+.section-dark {
+	background-color: #f28521;
+	color: white;
+}
+
+#Why_Cleveland {
+    background-color:#19226d;
+    color: white;
+    padding-bottom: 20px;
+          
+}
+#asideresidency {
+    float: left;
+    width: 30%;
+    padding: 1.5em 0;
+    margin: 2em 1em;
+    border-radius: 50%;
+    background-color: white;
+    
+}
+
+#asideres section {
+    background-color: white;
+    justify-content: left;
+    border-radius: 50%;
+}
+#asideres section img {
+    border-radius: 50%;
+    background-color: white;
+    
+}
+#maindiv{
+    text-align: center;
+	width: 70%;  
+    
+}
+
+#asidebonus {
+    float: left;
+    background-color: white;
+    color: black;
+    padding: 2em 1em 3em 1em;
+    text-align: left;
+}
+#bonus {
+    background-color: #09a6a5;
+    color: white;
+    
+}
+
+
+
+.ptext {
+	position: absolute;
+	top: 30%;
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+	letter-spacing: 8px;
+	text-transform: uppercase;
+}
+
+.ptext .border{
+	background-color: black;
+	color: #fff;
+	padding: 15px;
+}
+
+.ptext .border.trans{
+	background-color: black;
+	color: white;
+}
+
+
+
+@media(max-width:568px){
+	.pimg1, .pimg2, .pimg3{
+	background-attachment: scroll;	
+    }
+}
+
+@media(max-width: 570px){
+	.header {
+		width: 1vw;
+		padding-right: 1em;
+		padding-left: 1em;
+		
+	}
+
+	.header img{
+		margin-left: auto;
+	}
+    .header ul {
+        padding-right: auto;
+    }
+
+	.navbar ul {
+		display: flex;
+		flex-direction: column;
+		height: auto;
+	}
+	
+}
+
+
+footer ul {
+list-style-type: none;
+}
+
+
+    
+   
+     
+
+
+    
+
+   
+
+
+    
