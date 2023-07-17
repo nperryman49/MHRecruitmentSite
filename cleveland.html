@@ -9,7 +9,8 @@
 <meta http-equiv="refresh" content="30">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie-edge">
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="../MyParallaxWebsite/css/styles.css">
+<link rel="stylesheet" href="../MyParallaxWebsite/css/styles-cle.css">
 <script src=""></script>
 <script src="https://kit.fontawesome.com/yourcode.js"></script>
 <title>Living in Cleveland</title>
@@ -33,7 +34,6 @@
 		<ul>
 			<li><a href="../MyParallaxWebsite/nursing.html">Nursing at MH</a></li>
 			<li><a href="../MyParallaxWebsite/metrohealth.html">About MetroHealth</a></li>
-			<li><a href='../MyParallaxWebsite/cleveland.html'>Cleveland</a></li>
 			<li><a href="../MyParallaxWebsite/contactus.html">Contact Us</a></li>
 			<li><a href="../MyParallaxWebsite/index.html">Home</a></li>
 		  </ul>
@@ -83,16 +83,29 @@
 -->
 <section>
 <h2>How Much Is Your Dollar Worth?</h2>
-<ul>
-	<li>In Ohio</li>
-	<li>In NewYork</li>
-	<li>In Texas</li>
-	<li>In Flordia</li>
-	<li>In Pennsylvania</li>
-</ul>
-<div class="dollar-img">
-	<img src="../MyParallaxWebsite/images/us_dollar.png" alt="U.S Dollar" height="250px" width="500px">
+<div class ="button-container">
+	<button  onclick="changeImageWidth(1.13)">In Ohio</button>
+	<button onclick="changeImageWidth(.86)">In NewYork</button>
+	<button onclick="changeImageWidth(1.03)">In Texas</button>
+	<button onclick="changeImageWidth(.99)">In Flordia</button>
+	<button onclick="changeImageWidth(1.03)">In Pennsylvania</button>
 </div>
+<div class="image-container">
+	<img id="main-img" src="../MyParallaxWebsite/images/us_dollar.png" alt="U.S Dollar" width="500px" height="250px">
+</div>
+<script>
+	function changeImageWidth(scaleX){
+		const image = document.querySelector("#main-img");
+		image.style.scale= `${scaleX}`
+
+		const buttons = document.querySelectorAll('.button-container button');
+		buttons.forEach(button => {
+			button.classList.remove('active');
+		});
+
+		event.target.classList.add('active');
+	}
+</script>
 
 </section>
 </body>
