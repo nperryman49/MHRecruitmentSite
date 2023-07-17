@@ -89,17 +89,17 @@ background-attachment: fixed;
 }
 
 .pimg1 {
-	background-image:url('../MyParallaxWebsite/images/glickcenter.jpeg');
+	background-image:url('../images/glickcenter.jpeg');
 	min-height: 100%;
 }
 
 .pimg2 {
-	background-image:url('../MyParallaxWebsite/images/cleveland-skyline-feat.jpeg');
+	background-image:url('../images/cleveland-skyline-feat.jpeg');
 	min-height: 400px;
 }
 
 .pimg3 {
-	background-image: url('../MyParallaxWebsite/images/oldbuilding.jpeg');
+	background-image: url('../images/oldbuilding.jpeg');
 	min-height: 400px;
 }
 
@@ -152,13 +152,12 @@ color: white;
  display: none;
 }
 
-@media(max-width:568px){
-	.pimg1, .pimg2, .pimg3{
-	background-attachment: scroll;	
-    }
-}
+
 
 @media(max-width: 570px){
+	.pimg1, .pimg2, .pimg3{
+		background-attachment: scroll;	
+		}
 	.header {
 		width: 1vw;
 		padding-right: 1em;
@@ -175,8 +174,9 @@ color: white;
 		flex-direction: column;
 		height: auto;
 	}
-
-	
+	.ptext .border{
+		line-height: 80px;
+	}
 	
 }
 
