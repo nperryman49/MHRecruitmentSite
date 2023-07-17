@@ -82,20 +82,22 @@
 	Adding hover code soon - JH
 -->
 <section>
-<h2>How Much Is Your Dollar Worth?</h2>
+<h2 id="h2-dollar">How Much Is Your Dollar Worth?</h2>
 <div class ="button-container">
-	<button  onclick="changeImageWidth(1.13)">In Ohio</button>
-	<button onclick="changeImageWidth(.86)">In NewYork</button>
-	<button onclick="changeImageWidth(1.03)">In Texas</button>
-	<button onclick="changeImageWidth(.99)">In Flordia</button>
-	<button onclick="changeImageWidth(1.03)">In Pennsylvania</button>
+	<button onclick="changeImageWidth(1.13,'$1.13')">In Ohio</button>
+	<button onclick="changeImageWidth(.86,'$0.86')">In NewYork</button>
+	<button onclick="changeImageWidth(1.03,'$1.03')">In Texas</button>
+	<button onclick="changeImageWidth(.99,'$0.99')">In Flordia</button>
+	<button onclick="changeImageWidth(1.03,'$1.03')">In Pennsylvania</button>
 </div>
 <div class="image-container">
-	<img id="main-img" src="../MyParallaxWebsite/images/us_dollar.png" alt="U.S Dollar" width="500px" height="250px">
+	<img id="main-img" src="../MyParallaxWebsite/images/us_dollar.png" alt="U.S Dollar" width="500px" height="250px"/> 
+	<div class="text-overlay">$1.00</div>
 </div>
 <script>
-	function changeImageWidth(scaleX){
+	function changeImageWidth(scaleX,dollarText){
 		const image = document.querySelector("#main-img");
+		document.querySelector(".text-overlay").innerHTML = dollarText;
 		image.style.scale= `${scaleX}`
 
 		const buttons = document.querySelectorAll('.button-container button');
@@ -104,6 +106,8 @@
 		});
 
 		event.target.classList.add('active');
+
+
 	}
 </script>
 
