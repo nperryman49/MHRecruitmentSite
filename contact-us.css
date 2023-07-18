@@ -1,0 +1,86 @@
+body {
+	background-image: url("glickcenter.jpeg");
+	background-repeat: no-repeat;
+	opacity: 1.0;
+	background-size: cover;
+	}
+
+img {
+	background: url("mhlogo.png");
+	background-repeat: no repeat;
+	float: right;
+}
+
+select {
+	background-color: #19226d;
+	border-radius: 25px;
+}
+
+label, select {
+	color: #fff;
+	font-size: 25px;
+	text-decoration: underline;
+	font-family: "Brown", "Arial" sans-serif;
+	font-weight: bold;
+	opacity: 1.0;
+}
+
+[type=file] {
+	background-color: grey;
+}
+
+select, input[type=text],[type=email],[type=tel],[type=date],[type=file],[type=time],[type=appt], p {
+	width: 40%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	box-sizing: border-box;
+	text-color: white;
+	font-family: "Brown", "Arial" sans-serif;
+	font-weight: bold;
+	margin: auto;
+}
+
+input[type=text]:hover, [type=email]:hover, [type=tel]:hover,[type=date]:hover,[type=file]:hover,[type=time]:hover,[type=appt]:hover, p {
+	background-color: #54c3c0;
+}
+
+input[type=submit],[type=reset], p {
+	width: 50%;
+	background-color: #54c3c0;
+	color: white;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 25px;
+	cursor: pointer;
+	font-family: "Brown", "Arial" sans-serif;
+	font-weight: bold;
+	
+}
+
+input[type=submit]:hover,[type=reset]:hover {
+background-color: #45A049;
+font-family: "Brown", "Arial" sans-serif;
+font-weight: bold;
+border-radius: 25px;
+
+}
+
+div, p {
+	background-color: #19226d;
+	opacity: 1.0;
+	padding: 20px;
+	font-family: "Brown", "Arial" sans-serif;
+	font-weight: 400;
+	border-radius: 25px;
+	text-align: left;
+	width: 50%;
+}
+
+@media only screen and (max-width: 900px), and (min-width: 600px), (min-width: 1100px) {
+	
+	width: 50%;
+}
