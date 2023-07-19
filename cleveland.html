@@ -36,7 +36,7 @@
 			<li><a href="metrohealth.html">About MetroHealth</a></li>
 			<li><a href='cleveland.html'>Cleveland</a></li>
 			<li><a href="contactus.html">Contact Us</a></li>
-            <li><a href="index.html">Home</a></li>
+			<li><a href="index.html">Home</a></li>
 		  </ul>
 	  </div>
 <div class="pimg1">
@@ -97,8 +97,9 @@
 <script>
 	function changeImageWidth(scaleX,dollarText){
 		const image = document.querySelector("#main-img");
-		document.querySelector(".text-overlay").innerHTML = dollarText;
 		image.style.scale= `${scaleX}`
+
+		document.querySelector(".text-overlay").innerHTML = dollarText;
 
 		const buttons = document.querySelectorAll('.button-container button');
 		buttons.forEach(button => {
