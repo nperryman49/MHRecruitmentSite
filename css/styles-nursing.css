@@ -285,12 +285,13 @@ background-attachment: fixed;
 .ptext .border{
 	background-color: black;
 	color: #fff;
-	padding: 15px;
+	padding: 20px 10px;
 }
 
 .ptext .border.trans{
 	background-color: black;
 	color: white;
+    padding: 15px 10px;
 }
 
 
@@ -330,6 +331,10 @@ background-attachment: fixed;
     }
     #nursinglinkdiv li {
         text-align: center;
+    }
+
+    .border .border.trans {
+        word-wrap: break-word;
     }
    
 	

@@ -1,0 +1,218 @@
+* {
+    font-family: "Arial", sans-serif;
+    }
+    
+    .header {
+        height: 50px;
+        background-color: lightgray;
+        display: flex;
+        width: auto;
+        
+            
+    }
+    
+    .header img{
+        float: left;
+    }
+    header ul {
+        display: flex;
+        float: right;
+        list-style-type: none;
+        line-height: 50px;
+        align-items: center;
+        padding-left: 70%;		
+        margin-right: 15%;
+        
+        
+    }
+    
+    .icon {
+        padding: 1em 10px;
+            
+    }
+    
+    
+    .icon hover {
+        opacity: .7;
+        
+    }
+    
+    .navbar ul {
+        display: flex;
+        justify-content: space-around;
+        height: 40px;
+        background-color: #19226d;
+        list-style-type: none;
+        padding: 0px 1em;
+        margin: 0px;
+        width:auto;
+        
+    }
+    .navbar a {
+        display: block;
+        color: white; 
+        text-decoration: none;
+        text-align: center;
+        font-size: 18px;
+        line-height: 40px;
+        padding: 0px 15px;			
+    }
+    
+    .navbar a:hover {
+        background: #ddd;
+        color: black;
+    }
+    
+    body, html {
+        height: 100%;
+        margin: 0;
+        font-size: 16px;
+        font-family: "Brown", "Arial" sans-serif;
+        font-weight: 400;
+        line-height: 1.8em;
+        color: #54c3c0;
+        background-color: 902683;
+    }
+    #abovevideo {
+        text-align: center;
+    }
+    #video {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .pimg1, .pimg2, .pimg3{
+        position: relative;
+        opacity: 0.70;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    
+    
+    /*	fixed = parallax
+        scroll = normal
+    */
+    background-attachment: fixed;
+    }
+    
+    .pimg1 {
+        background-image:url('../images/glickcenter.jpeg');
+        min-height: 100%;
+    }
+    
+    .pimg2 {
+        background-image:url('../images/cleveland-skyline-feat.jpeg');
+        min-height: 400px;
+    }
+    
+    .pimg3 {
+        background-image: url('../images/oldbuilding.jpeg');
+        min-height: 400px;
+    }
+    
+    .section {
+        text-align: center;
+        padding: 20px 20px;
+        color: #f4f4f4;
+        font-family: "Brown", "Arial" sans-serif;
+        
+    }
+    
+    .aside {
+        float: left;
+        width: 30%;
+        padding: 1em 1em;
+        margin: 1em 1em;
+        height: auto;
+        background-color: white;
+        vertical-align: center;
+        
+    }
+    .section-light{
+        background-color: #632d80;
+        color: #f4f4f4;
+        font-family: "Brown", "Arial" sans-serif;
+        height: auto;
+    }
+    
+    #Why_Cleveland {
+    background-color:#54c3c0;
+    color: white;
+    height: auto;
+    }  
+    ul.wellnesslist{
+        display: inline-block;
+        text-align: left;
+    }
+
+    .section-dark {
+        background-color: #e60b8a;
+        color: white;
+       
+        
+    }
+    
+   ul.RGBList {
+    display: inline-block;
+    text-align: left;
+   }
+    
+    .ptext {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        color: black;
+        font-size: 27px;
+        letter-spacing: 8px;
+        text-transform: uppercase;
+    }
+    
+    .ptext .border{
+        background-color: black;
+        color: #fff;
+        padding: 20px; 
+    }
+    
+    .ptext .border.trans{
+        background-color: black;
+        color: white;
+    }
+    
+    .last_border {
+     display: none;
+    }
+    
+    
+    
+    @media(max-width: 570px){
+        .pimg1, .pimg2, .pimg3{
+            background-attachment: scroll;	
+            }
+        .header {
+            width: 1vw;
+            padding-right: 1em;
+            padding-left: 1em;
+            
+        }
+    
+        .header ul{
+            margin-left: auto;
+        }
+    
+        .navbar ul {
+            display: flex;
+            flex-direction: column;
+            height: auto;
+        }
+        .ptext .border{
+            line-height: 80px;
+        }
+        
+    }
+    
+    
+    footer ul {
+    list-style-type: none;
+    }
+    
