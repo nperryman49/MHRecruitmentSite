@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!--This is the combined contact us from Naomi and hersheys page-->
 <html>
 <html lang="en-US">
 <head>
@@ -9,7 +10,9 @@
 <meta http-equiv="refresh" content="30">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie-edge">
-<link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/styles-contactus.css">
+
+
 <script src=""></script>
 <script src="https://kit.fontawesome.com/yourcode.js"></script>
 <title>Living in Cleveland</title>
@@ -37,5 +40,60 @@
             <li><a href="index.html">Home</a></li>
 		  </ul>
 	  </div>
+<div class="form">
+	  <p>Want to learn more about career opportunities at MetroHealth? Consider joining our daily email blast.</p>
+<form action="/Documents/form.txt" autocomplete="off">
+	<label for="fname">First name:</label><br>
+	<input type="text" id="fname" name="fname" placeholder="Insert First name here." size="30" autofocus required><br><br>
+	<label for="lname">Last name:</label><br>
+	<input type="text" id="lname" name="lname" placeholder="Insert Last name here." size="30" autofocus required><br><br>
+	<!-- <input type="image" src="img_submit.gif" alt="Submit" width="" height=""> -->
+	<label for="Email">Email:</label><br>
+	<input type="email" id="email" name="email" placeholder="Insert Email Address here." size="30" autofocus required autocomplete"off"><br><br>
+	<p>Want to schedule an appointment with a recruiter? Please submit the following information.</p><br>
+	<label for="phone">Phone number:</label><br>
+	<input type="tel" id="phone" name="phone" placeholder="Insert Phone number here." pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+	<label for="country_code">Home Country:</label><br>
+	<input type="text" id="country_code" name="country_code" placeholder="Tell us where your from." pattern="[A-Za-z]{3}" title="Three letter Country code"><br><br>
+	<label for="files">Submit Resume here:</label><br>
+	<input type="file" id="files" name="files" multiple><br><br>
+  <label for="nurse status">Current nursing status:</label><br>
+  <select id="appt" name="appt">
+	<option value=""></option>
+	<option value="rn">RN</option>
+    <option value="lpn">LPN</option>
+    <option value="Future graduate">Future college graduate</option>
+	</select><br><br>
+<label for="datemin">Enter an available day for a virtual appointment:</label><br>
+<input type="date" id="datemin" name="datemin" min="date()" required><br><br>
+  <label for="appt">Select a time:</label><br>
+  <input type="time" id="appt" name="appt"><br><br>
+<label for="datemin">Enter another day for a virtual appointment:</label><br>
+<input type="date" id="datemin" name="datemin" max="date()" required><br><br>
+  <label for="appt">Select another time:</label><br>
+  <input type="time" id="appt" name="appt"><br><br>
+  <label for="appt">How did you hear about us?</label><br>
+  <select id="appt" name="appt">
+    <option value=""></option>
+    <option value="facebook">Facebook</option>
+    <option value="linkedin">Linked-in</option>
+    <option value="tiktok">Tiktok</option>
+    <option value="instagram">Instagram</option>
+	<option value="google">Google</option>
+	<option value="Word of mouth">Friend</option>
+	<option value="Website">Metrohealth.org</option>
+	<option value="recruiter">Recruiter</option>
+	<option value="other">Other</option>
+	</select><br><br>
+	<input type="text" id="other" name="pther" placeholder="If other, How did you hear about us." size="30" autofocus><br><br>
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</form>
+</div>
+
+
+
+
+
 </body>
 </html>
