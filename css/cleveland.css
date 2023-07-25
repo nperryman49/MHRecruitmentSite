@@ -146,22 +146,22 @@
 	}
 	
 	.pimg1 {
-		background-image: url('/images/orchestra.jpg');
+		background-image: url('../images/orchestra.jpg');
 		min-height: 100%;
 	}
 	
 	.pimg2 {
-		background-image: url('/images/e4th.jpeg');
+		background-image: url('../images/e4th.jpeg');
 		min-height: 400px;
 	}
 	
 	.pimg3 {
-		background-image: url('/images/ohcity.jpg');
+		background-image: url('../images/ohcity.jpg');
 		min-height :400px;
 	}
 	
 	.pimg4 {
-		background-image: url('/images/clevelandscript.jfif');
+		background-image: url('../images/clevelandscript.jfif');
 		min-height: 100%;
 	}
 	
