@@ -15,9 +15,6 @@ window.onload = function () {
     var secondApptTime = document.getElementById("timeTwo").value;
     var about = document.getElementById("about").value;
 
-    //file creation
-    let fso = CreateObject("Scripting.FileSystemObject");
-    let txtFile = CreateTextFile("contactus.txt", true);
 
  information.push(firstName);
  information.push(lastName);
@@ -39,20 +36,24 @@ submitButton.onclick = myFunc;
 // will save information into a text file
 function myFunc(){
    
-    if(!txtFile)
-    {
-         txtFile = CreateTextFile("contactus.txt", true);
-    }
-      
-    // Data which will write in a file.
-    for(let i=0; i < information.length; i++)
-    {
-      txtFile.writeline(information[i] + ", ");
-    }
-      
-    txtFile.writeline("-------------------------------------------");
-    txtFile.Close();
-    // Write data in 'Output.txt' .
+  // Requiring fs module in which
+  // writeFile function is defined.
+  const fs = require('fs')
+   
+  // Data which will write in a file.
+  for(let i=0; i <= information.length; i++)
+  {
+      fs.writeFile('contactus.txt', information[i], (err) => {
+          // In case of a error throw err.
+          if (err) {
+            throw new Error(err);
+          }
+            console.log("Wrote to file successfully");
+
+      })
   }
+   
+  // Write data in 'Output.txt' .
+}
 }
 
