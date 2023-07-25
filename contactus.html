@@ -46,35 +46,46 @@
 <form action="/Documents/form.txt" autocomplete="off">
 	<label for="fname">First name:</label><br>
 	<input type="text" id="fname" name="fname" placeholder="Insert First name here." size="30" autofocus required><br><br>
+	
 	<label for="lname">Last name:</label><br>
 	<input type="text" id="lname" name="lname" placeholder="Insert Last name here." size="30" autofocus required><br><br>
 	<!-- <input type="image" src="img_submit.gif" alt="Submit" width="" height=""> -->
+	
 	<label for="Email">Email:</label><br>
 	<input type="email" id="email" name="email" placeholder="Insert Email Address here." size="30" autofocus required autocomplete"off"><br><br>
 	<p>Want to schedule an appointment with a recruiter? Please submit the following information.</p><br>
+	
 	<label for="phone">Phone number:</label><br>
 	<input type="tel" id="phone" name="phone" placeholder="Insert Phone number here." pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+	
 	<label for="country_code">Home Country:</label><br>
 	<input type="text" id="country_code" name="country_code" placeholder="Tell us where your from." pattern="[A-Za-z]{3}" title="Three letter Country code"><br><br>
+	
 	<label for="files">Submit Resume here:</label><br>
 	<input type="file" id="files" name="files" multiple><br><br>
-  <label for="nurse status">Current nursing status:</label><br>
-  <select id="appt" name="appt">
+ 
+	<label for="nurse status">Current nursing status:</label><br>
+  <select id="status" name="appt">
 	<option value=""></option>
 	<option value="rn">RN</option>
     <option value="lpn">LPN</option>
     <option value="Future graduate">Future college graduate</option>
 	</select><br><br>
-<label for="datemin">Enter an available day for a virtual appointment:</label><br>
-<input type="date" id="datemin" name="datemin" min="date()" required><br><br>
-  <label for="appt">Select a time:</label><br>
-  <input type="time" id="appt" name="appt"><br><br>
-<label for="datemin">Enter another day for a virtual appointment:</label><br>
-<input type="date" id="datemin" name="datemin" max="date()" required><br><br>
-  <label for="appt">Select another time:</label><br>
-  <input type="time" id="appt" name="appt"><br><br>
+
+	<label for="datemin">Enter an available day for a virtual appointment:</label><br>
+<input type="date" id="dateOne" name="datemin" min="date()" required><br><br>
+  
+<label for="appt">Select a time:</label><br>
+  <input type="time" id="timeOne" name="appt"><br><br>
+
+  <label for="datemin">Enter another day for a virtual appointment:</label><br>
+<input type="date" id="dateTwo" name="datemin" max="date()" required><br><br>
+ 
+<label for="appt">Select another time:</label><br>
+  <input type="time" id="timeTwo" name="appt"><br><br>
+ 
   <label for="appt">How did you hear about us?</label><br>
-  <select id="appt" name="appt">
+  <select id="about" name="appt">
     <option value=""></option>
     <option value="facebook">Facebook</option>
     <option value="linkedin">Linked-in</option>
@@ -86,9 +97,10 @@
 	<option value="recruiter">Recruiter</option>
 	<option value="other">Other</option>
 	</select><br><br>
+	
 	<input type="text" id="other" name="pther" placeholder="If other, How did you hear about us." size="30" autofocus><br><br>
-<input type="submit" value="Submit">
-<input type="reset" value="Reset">
+<input type="submit" value="Submit" id="submitBtn">
+<input type="reset" value="Reset" id="resetBtn">
 </form>
 </div>
 
