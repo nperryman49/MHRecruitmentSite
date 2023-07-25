@@ -1,11 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" href="css/contactus-css.css">
+<link rel="stylesheet" href="contact-us.css">
 </head>
+<header>
+	<div class="header">
+		<a href="https://www.metrohealth.org/"> <img src="../contact-us/mhlogo.png" alt="MetroHealth Logo" style="height:45px; padding-left: 10px;"/></a>	
+	
+	<ul>
+		<li><a href="https://www.facebook.com/metrohealthCLE/"> <img src="../contact-us/facebook.png" class='icon' alt="Facebook Link"/> </a></li>
+		<li><a href="https://twitter.com/i/flow/login?redirect_after_login=%2FmetrohealthCLE"> <img src="../contact-us/twitter.png" class='icon' alt="Twitter"/></a></li>
+		<li><a href="https://twitter.com/i/flow/login?redirect_after_login=%2FmetrohealthCLE"> <img src="../contact-us/tiktok.png" class='icon' alt="Tik Tok"/></a></li>
+		<li><a href="https://www.instagram.com/metrohealthcle/"> <img src="../contact-us/instagram.png" class='icon' alt="Instagram"/></a></li>
+	</ul>
+    </div>
+</header>
 <body>
-<p>Want to learn more about career opprotunities at metrohealth? Consider joining our daily email blast.</p>
-<form action="/Documents/form.txt" autocomplete="off">
+	<div class="navbar">
+		<ul>
+			<li><a href="nursing.html">Nursing at MH</a></li>
+			<li><a href="metrohealth.html">About MetroHealth</a></li>
+			<li><a href='cleveland.html'>Cleveland</a></li>
+			<li><a href="contactus.html">Contact Us</a></li>
+            <li><a href="index.html">Home</a></li>
+		  </ul>
+	  </div><br><br>
+<p>Want to learn more about career opportunities at MetroHealth? Consider joining our daily email blast.</p>
+<form class="form" action="../contact-us/contactinfo.xlsx" autocomplete="off">
 	<label for="fname">First name:</label><br>
 	<input type="text" id="fname" name="fname" placeholder="Insert First name here." size="30" autofocus required><br><br>
 	<label for="lname">Last name:</label><br>
@@ -23,8 +44,8 @@
   <label for="nurse status">Current nursing status:</label><br>
   <select id="appt" name="appt">
 	<option value=""></option>
-	<option value="rn">Rn</option>
-    <option value="lpn">Lpn</option>
+	<option value="rn">RN</option>
+    <option value="lpn">LPN</option>
     <option value="Future graduate">Future college graduate</option>
 	</select><br><br>
 <label for="datemin">Enter an available day for a virtual appointment:</label><br>
@@ -46,7 +67,9 @@
 	<option value="Word of mouth">Friend</option>
 	<option value="Website">Metrohealth.org</option>
 	<option value="recruiter">Recruiter</option>
-  </select><br>
+	<option value="other">Other</option>
+	</select><br><br>
+	<input type="text" id="other" name="other" placeholder="If other, How did you hear about us." size="30" autofocus><br><br>
 <input type="submit" value="Submit">
 <input type="reset" value="Reset">
 </form>
