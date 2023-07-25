@@ -63,7 +63,7 @@ header ul {
         color: black;
     }
 body {
-	background-image: url("/images/glickcenter.jpeg");
+	background-image: url("../images/glickcenter.jpeg");
 	background-repeat: no-repeat;
 	opacity: 1.0;
 	background-size:cover;
