@@ -1,20 +1,50 @@
-/*window.onload = init;
+    var slideIndex=1;
+    showSlides(slideIndex);
 
-var dollarPng = document.getElementById("dollarIMG").width = "500px";
+function plusSlides(n){
+    showSlides(slideIndex += n);
+}
+function currentSlides(n){
+    showSlides(slideIndex = n);
+}
+function showSlides(n){
+    var i;
+    var slides=document.getElementsByClassName("mySlides");
+    var dots=document.getElementsByClassName("dot");
 
+    if (n > slides.length) {slideIndex=1}
+    if (n < 1) {slideIndex=slides.length}
 
-document.querySelector(".OH").onclick = OHclick;
-document.querySelector(".NY").onclick = NYclick;
-document.querySelector(".TX").onclick = TXclick;
-document.querySelector(".FL").onclick = FLclick;
-document.querySelector(".PA").onclick = PAclick;
+    for (i=0;i<slides.length; i++){
+        slides[i].style.display="none";
 
+    }
+    for (i=0; i<dots.length; i++){
+        dots[i].className=dots[i].className.replace("active", "");
+          
+    }
+    slides[slideIndex-1].style.display="block";
+    dots[slideIndex-1].className+="active";
 
-let OHclick =()=>{ dollarPng.width = dollarPng.width*1.13;}
-let NYclick =()=>{ dollarPng.width = dollarPng.width*.86;}
-let TXclick =()=>{ dollarPng.width = dollarPng.width*1.03;}
-let FLclick =()=>{ dollarPng.width = dollarPng.width*.99;}
-let PAclick =()=>{ dollarPng.width = dollarPng.width*1.03;}
+}   
 
-init();
-*/
+var slideIndex=0;
+showSlides();
+
+function showSlides() {
+    var i;
+    
+    var slides=document.getElementsByClassName("mySlides");
+    for(i=0; i<slides.length; i++){
+        slides[i].style.display="none";
+        
+    }
+    slideIndex++;
+    if(slideIndex>slides.length){
+        slideIndex=1
+    }
+    
+    slides[slideIndex-1].style.display="block";
+    setTimeout(showSlides, 8000);
+   
+} 
