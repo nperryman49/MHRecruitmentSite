@@ -94,6 +94,38 @@
         <h2></h2>
         <p>Cleveland is one of the most affordable cities in america to live in and one of the best cities in america for home affordability. Cleveland is ranked 12th for nurses pay adjusted for cost of living.</p>
         </section>
+		<section>
+			<h2 id="h2-dollar">How Much Is Your Dollar Worth?</h2>
+			<div class ="button-container">
+				<button onclick="changeImageWidth(1.13,'$1.13')">In Ohio</button>
+				<button onclick="changeImageWidth(.86,'$0.86')">In New York</button>
+				<button onclick="changeImageWidth(1.03,'$1.03')">In Texas</button>
+				<button onclick="changeImageWidth(.99,'$0.99')">In Florida</button>
+				<button onclick="changeImageWidth(1.03,'$1.03')">In Pennsylvania</button>
+			</div>
+			<div class="image-container">
+				<img id="main-img" src="images/us_dollar.png" alt="U.S Dollar" width="500px" height="250px"/> 
+				<div class="text-overlay">$1.00</div>
+			</div>
+			<script>
+				function changeImageWidth(scaleX,dollarText){
+					const image = document.querySelector("#main-img");
+					image.style.scale= `${scaleX}`
+			
+					document.querySelector(".text-overlay").innerHTML = dollarText;
+			
+					const buttons = document.querySelectorAll('.button-container button');
+					buttons.forEach(button => {
+						button.classList.remove('active');
+					});
+			
+					event.target.classList.add('active');
+			
+			
+				}
+			</script>
+			
+			</section>
         <div class="pimg3">
         <div class="ptext">
        <!-- <span class="border trans"></span> -->
@@ -107,38 +139,6 @@
         <div class="ptext">
        <!-- <span class="border"></span> -->
         </div>
-        </div>
-        <section>
-<h2 id="h2-dollar">How Much Is Your Dollar Worth?</h2>
-<div class ="button-container">
-	<button onclick="changeImageWidth(1.13,'$1.13')">In Ohio</button>
-	<button onclick="changeImageWidth(.86,'$0.86')">In New York</button>
-	<button onclick="changeImageWidth(1.03,'$1.03')">In Texas</button>
-	<button onclick="changeImageWidth(.99,'$0.99')">In Florida</button>
-	<button onclick="changeImageWidth(1.03,'$1.03')">In Pennsylvania</button>
-</div>
-<div class="image-container">
-	<img id="main-img" src="images/us_dollar.png" alt="U.S Dollar" width="500px" height="250px"/> 
-	<div class="text-overlay">$1.00</div>
-</div>
-<script>
-	function changeImageWidth(scaleX,dollarText){
-		const image = document.querySelector("#main-img");
-		image.style.scale= `${scaleX}`
-
-		document.querySelector(".text-overlay").innerHTML = dollarText;
-
-		const buttons = document.querySelectorAll('.button-container button');
-		buttons.forEach(button => {
-			button.classList.remove('active');
-		});
-
-		event.target.classList.add('active');
-
-
-	}
-</script>
-
-</section>
+        </div>       
 </body>
 </html>
