@@ -172,11 +172,12 @@ p {
 	ul.header{
 		float: right;
 		position: fixed;
+		margin-left: 30%;
 		
 	}
 	.icon {
-		margin-left: 250%;
-		padding-right: 10px;
+		margin-left: 200%;
+		padding-right: 20px;
 	}
 
 	.checkbtn {
