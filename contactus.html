@@ -2,25 +2,13 @@
 <!--This is the combined contact us from Naomi and hersheys page-->
 
 <html>
-<html lang="en-US">
 <head>
-<meta charset="UTF-8">
-<meta name="keywords" content="">
-<meta name="description" content="">
-<meta name="author" content="">
-<meta http-equiv="refresh" content="30">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie-edge">
-<link rel="stylesheet" href="css/styles-contactus.css">
-
-
-<script src=""></script>
-<script src="https://kit.fontawesome.com/yourcode.js"></script>
-<title>Living in Cleveland</title>
+<link rel="stylesheet" href="css/contact-us.css">
+<script type = "text/javascript" src="js/contactus.js"></script>
 </head>
 <header>
 	<div class="header">
-		<a href="https://www.metrohealth.org/"> <img src="images/mh-logo.png" alt="MetroHealth Logo" style="height:45px;padding-left: 10px;"/></a>	
+		<a href="https://www.metrohealth.org/"> <img src="images/mh-logo.png" alt="MetroHealth Logo" style="height:45px; padding-left: 10px;"/></a>	
 	
 	<ul>
 		<li><a href="https://www.facebook.com/metrohealthCLE/"> <img src="images/facebook.png" class='icon' alt="Facebook Link"/> </a></li>
@@ -32,11 +20,7 @@
 </header>
 <body>
 	
-	<nav class="navbar">
-		<input type="checkbox" id="check">
-			<label for="check" class="checkbtn">
-				<img src="images/menu.png" alt="hamburger-icon">
-			</label>
+	<div class="navbar">
 		<ul>
 			<li><a href="nursing.html">Nursing at MH</a></li>
 			<li><a href="metrohealth.html">About MetroHealth</a></li>
@@ -44,7 +28,7 @@
 			<li><a href="contactus.html">Contact Us</a></li>
             <li><a href="index.html">Home</a></li>
 		  </ul>
-		</nav>
+	  </div>
 <div class="form">
 	  <p>Want to learn more about career opportunities at MetroHealth? Consider joining our daily email blast.</p>
 <form action="/Documents/form.txt" autocomplete="off">
@@ -52,12 +36,12 @@
 	<input type="text" id="fname" name="fname" placeholder="Insert First name here." size="30" autofocus required><br><br>
 	<label for="lname">Last name:</label><br>
 	<input type="text" id="lname" name="lname" placeholder="Insert Last name here." size="30" autofocus required><br><br>
-	<!-- <input type="image" src="img_submit.gif" alt="Submit" width="" height=""> -->
+	<!-- <input type="image" action="../contact-us/contactinfo.xlsx" src="img_submit.gif" alt="Submit" width="" height=""> -->
 	<label for="Email">Email:</label><br>
 	<input type="email" id="email" name="email" placeholder="Insert Email Address here." size="30" autofocus required autocomplete"off"><br><br>
 	<p>Want to schedule an appointment with a recruiter? Please submit the following information.</p><br>
 	<label for="phone">Phone number:</label><br>
-	<input type="tel" id="phone" name="phone" placeholder="Insert Phone number here." pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+	<input type="tel" id="phone" name="phone" placeholder="Insert Phone number here. Format: 216-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
 	<label for="country_code">Home Country:</label><br>
 	<input type="text" id="country_code" name="country_code" placeholder="Tell us where your from." pattern="[A-Za-z]{3}" title="Three letter Country code"><br><br>
 	<label for="files">Submit Resume here:</label><br>
@@ -90,15 +74,10 @@
 	<option value="recruiter">Recruiter</option>
 	<option value="other">Other</option>
 	</select><br><br>
-	<input type="text" id="other" name="pther" placeholder="If other, How did you hear about us." size="30" autofocus><br><br>
+	<input type="text" id="other" name="other" placeholder="If other, How did you hear about us." size="30" autofocus><br><br>
 <input type="submit" value="Submit">
 <input type="reset" value="Reset">
 </form>
-</div>
-
-
-
-
 
 </body>
 </html>
