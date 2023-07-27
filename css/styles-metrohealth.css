@@ -20,22 +20,20 @@
         list-style-type: none;
         line-height: 50px;
         align-items: center;
-        padding-left: 70%;		
-        margin-right: 15%;
+        margin-left: auto;
+	    margin-right: 2%;
         
         
     }
     
     .icon {
         padding: 1em 10px;
+        padding-right: 20px;
             
     }
     
     
-    .icon hover {
-        opacity: .7;
-        
-    }
+    
     
     .navbar ul {
         display: flex;
@@ -62,7 +60,17 @@
         background: #ddd;
         color: black;
     }
-    
+    .checkbtn {
+        padding-top: 4px;
+        margin-right: 20px;
+        cursor: pointer;
+        display: none;
+        
+    }
+    #check {
+        display: none;
+    }
+
     body, html {
         height: 100%;
         margin: 0;
@@ -75,10 +83,12 @@
     }
     #abovevideo {
         text-align: center;
+        color: #19226d;
     }
-    #video {
+    iframe {
         display: flex;
-        justify-content: center;
+        margin: auto;
+        margin-bottom: 1em;
     }
     
     .pimg1, .pimg2, .pimg3{
@@ -118,14 +128,13 @@
         
     }
     
-    .aside {
+    .JFimages {
         float: left;
         width: 30%;
         padding: 1em 1em;
         margin: 1em 1em;
         height: auto;
-        background-color: white;
-        vertical-align: center;
+        
         
     }
     .section-light{
@@ -133,30 +142,47 @@
         color: #f4f4f4;
         font-family: "Brown", "Arial" sans-serif;
         height: auto;
+        text-align: center;
+            
     }
-    
+   
+    .HEAP {
+        float: left;
+        width: 30%;
+        margin: 3em 2em;
+        height: auto; 
+        padding: 0 1em;
+        padding-right: 10em;
+        
+       
+    }
+
+  
     #Why_Cleveland {
     background-color:#54c3c0;
     color: white;
     height: auto;
-    }  
-    ul.wellnesslist{
-        display: inline-block;
-        text-align: left;
-    }
-
-    .section-dark {
-        background-color: #e60b8a;
-        color: white;
-       
-        
-    }
-    
-   ul.RGBList {
-    display: inline-block;
+    width: auto;
     text-align: left;
-   }
+   
+    }  
+    ul.wellnesslist {
+        list-style-type: none;
+        float: none;
+    }
     
+    
+    .RBG {
+        background-color: #632d80;
+        color: WHITE;
+        text-align: center;
+        list-style-type: none;
+                   
+    }
+    ul.RBGList {
+        list-style-type: none;
+    }
+     
     .ptext {
         position: absolute;
         top: 50%;
@@ -179,9 +205,6 @@
         color: white;
     }
     
-    .last_border {
-     display: none;
-    }
     
     
     
@@ -193,26 +216,77 @@
             width: 1vw;
             padding-right: 1em;
             padding-left: 1em;
+            background-color: white;
             
         }
     
-        .header ul{
-            margin-left: auto;
+        ul.header{
+            float: right;
+            position: fixed;
+            margin-left: 30%;
         }
-    
-        .navbar ul {
-            display: flex;
-            flex-direction: column;
-            height: auto;
+        .icon {
+            margin-left: 190%;
+            padding-right: 15px;
         }
+
+
+        
         .ptext .border{
             line-height: 80px;
         }
         
+        .checkbtn {
+            display: block;
+            padding-left: 2%;
+            padding-top: 7px;
+            padding-bottom: 0;
+              
+            
+        }
+        nav{
+            background: #19226d;
+            width: 100%;
+        }
+        .navbar ul {
+            
+            width: 100%;
+            background-color: #19226d;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul {
+            position: fixed;
+            height: auto;
+            text-align: center;
+            left:-110%;
+            transition: all .5s;
+            z-index: 1;
+            top: 178px;
+            display: flex;
+            flex-direction: column;
+            background-color: #19226d;
+                      
+            
+        }
+        nav ul li {
+            display: block;
+            background-color: #19226d;
+        }
+       
+        nav ul li a {
+            font-size: 15px;
+        }
+        #check:checked ~ ul{
+            left: 0;
+        }
+        .HEAP {
+            display:block;
+                      
+        }
     }
     
     
-    footer ul {
-    list-style-type: none;
-    }
+   
     

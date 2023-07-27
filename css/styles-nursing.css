@@ -2,7 +2,7 @@
     font-family: Arial, Helvetica, sans-serif;
 }
     
-    .header {
+.header {
         height: 50px;
         background-color: lightgray;
         display: flex;
@@ -10,32 +10,32 @@
                   
     }
     
-    .header img{
+.header img{
         float: left;
     }
-    header ul {
+header ul {
         display: flex;
         float: right;
         list-style-type: none;
         line-height: 50px;
         align-items: center;
-        padding-left: 70%;		
-        margin-right: 15%;
+        margin-left: auto;
+	    margin-right: 5%;
              
     }
     
-    .icon {
+.icon {
         padding: 1em 10px;
             
     }
     
     
-    .icon hover {
+.icon hover {
         opacity: .7;
         
     }
     
-    .navbar ul {
+.navbar ul {
         display: flex;
         justify-content: space-around;
         height: 40px;
@@ -46,7 +46,7 @@
         width:auto;
         
     }
-    .navbar a {
+.navbar a {
         display: block;
         color: white; 
         text-decoration: none;
@@ -56,14 +56,24 @@
         padding: 0px 15px;			
     }
     
-    .navbar a:hover {
+.navbar a:hover {
         background: #ddd;
         color: black;
     }
     
-   
+    .checkbtn {
+        padding-top: 4px;
+        margin-right: 20px;
+        cursor: pointer;
+        display: none;
+        
+    }
+    #check {
+        display: none;
+    }
 
-    .slider-container {
+
+.slider-container {
         max-width: fit-content;
         position: relative;
         justify-content: center;
@@ -73,7 +83,7 @@
 
     }
 
-    .slideWrap {
+.slideWrap {
         position: relative;
         list-style: none;
         height: auto;
@@ -205,6 +215,10 @@ background-attachment: fixed;
 	color: #f4f4f4;
 	font-family: "Brown", "Arial" sans-serif;
 }
+.research {
+    text-align: right;
+	
+}
 
 .section-light{
 	background-color: #632d80;
@@ -226,36 +240,31 @@ background-attachment: fixed;
 #asideresidency {
     float: left;
     width: 30%;
-    padding: 1.5em 0;
-    margin: 1 6em;
-    border-radius: 60%;
-    background-color: white;
+    padding: 1em 2em;
+    margin: 0 2em;
+   
+    
     
 }
 
 #asideres section {
     background-color: white;
     justify-content: left;
-    border-radius: 50%;
-    padding: 1em 3em;
-    margin: 2em 2em;
+    padding: 2em 3em;
+    margin: 3em 6em;
     
    
 }
 #asideres section img {
-    border-radius: 50%;
+    
     background-color: white;
     height: auto;
     width: 100%;
+    padding: 1em 1em;
     
     
 }
-#maindiv{
-    text-align: center;
-	width: 70%;  
-    padding-left: 1em;
-    
-}
+
 
 #asidebonus {
     float: left;
@@ -307,28 +316,80 @@ background-attachment: fixed;
 		width: 1vw;
 		padding-right: 1em;
 		padding-left: 1em;
-		
+		background-color: white;
 	}
 
 	.header img{
 		margin-left: auto;
 	}
-    .header ul {
-        padding-right: auto;
+    ul.header {
+        float: right;
+        position: fixed;
+       
     }
 
-	.navbar ul {
-		display: flex;
-		flex-direction: column;
-		height: auto;
-	}
+    .icon {
+        margin-left: 270%;
+        padding-right: 20px;
+    }
 
-    #nursinglinkdiv ul {
-        display: flex;
-        flex-direction: column;
-        height: auto;
+
+    .checkbtn {
+        display: block;
+        padding-left: 2%;
+        padding-top: 7px;
+        padding-bottom: 0;
+          
         
     }
+    nav{
+        background: #19226d;
+        width: 100%;
+    }
+    .navbar ul {
+        
+        width: 100%;
+        background-color: #19226d;
+        padding: 0;
+        margin: 0;
+    }
+
+    nav ul {
+        position: fixed;
+        height: auto;
+        text-align: center;
+        left:-110%;
+        transition: all .5s;
+        z-index: 1;
+        top: 178px;
+        display: flex;
+        flex-direction: column;
+        background-color: #19226d;
+                  
+        
+    }
+    nav ul li {
+        display: block;
+        background-color: #19226d;
+    }
+   
+    nav ul li a {
+        font-size: 15px;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+    #nursinglinkdiv ul{
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        height: auto;
+        width:90%;
+        margin-right: 2em;  
+           
+        
+    }
+   
     #nursinglinkdiv li {
         text-align: center;
     }

@@ -20,22 +20,19 @@ header ul {
 	list-style-type: none;
 	line-height: 50px;
 	align-items: center;
-	padding-left: 70%;		
-	margin-right: 15%;
+	margin-left: auto;
+	margin-right: 5%;
 	
 	
 }
 
 .icon {
 	padding: 1em 10px;
-		
+	padding-right: 20px;	
 }
 
 
-.icon hover {
-	opacity: .7;
-	
-}
+
 
 .navbar ul {
 	display: flex;
@@ -62,6 +59,17 @@ header ul {
 	background: #ddd;
 	color: black;
 }
+.checkbtn {
+	padding-top: 4px;
+	margin-right: 20px;
+	cursor: pointer;
+	display: none;
+	
+}
+#check {
+	display: none;
+}
+
 
 body, html {
 	height: 100%;
@@ -158,21 +166,75 @@ color: white;
 	.pimg1, .pimg2, .pimg3{
 		background-attachment: scroll;	
 		}
+
+
 	.header {
 		width: 1vw;
 		padding-right: 1em;
 		padding-left: 1em;
+		background-color: white;
 		
 	}
 
-	.header ul{
-		margin-left: auto;
+	ul.header{
+		float: right;
+		position: fixed;
+		margin-left: 30%;
+	}
+	.icon {
+		margin-left: 190%;
+		padding-right: 15px;
 	}
 
+
+	.ptext .border{
+		line-height: 80px;
+	}
+	
+	.checkbtn {
+		display: block;
+		padding-left: 2%;
+		padding-top: 7px;
+		padding-bottom: 0;
+		  
+		
+	}
+	nav{
+		background: #19226d;
+		width: 100%;
+	}
 	.navbar ul {
+		
+		width: 100%;
+		background-color: #19226d;
+		padding: 0;
+		margin: 0;
+	}
+
+	nav ul {
+		position: fixed;
+		height: auto;
+		text-align: center;
+		left:-110%;
+		transition: all .5s;
+		z-index: 1;
+		top: 178px;
 		display: flex;
 		flex-direction: column;
-		height: auto;
+		background-color: #19226d;
+				  
+		
+	}
+	nav ul li {
+		display: block;
+		background-color: #19226d;
+	}
+   
+	nav ul li a {
+		font-size: 15px;
+	}
+	#check:checked ~ ul{
+		left: 0;
 	}
 	.ptext .border{
 		line-height: 80px;
@@ -181,6 +243,4 @@ color: white;
 }
 
 
-footer ul {
-list-style-type: none;
-}
+
