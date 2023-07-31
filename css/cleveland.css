@@ -8,7 +8,11 @@
         height: 50px;
         background-color: lightgray;
         display: flex;
-        width: auto;
+        width: 1vw;
+        padding-right: 1em;
+        padding-left: 1em;
+        background-color: white;
+        
                   
     }
     
@@ -72,11 +76,13 @@
     header ul {
         display: flex;
         float: right;
+        position: fixed;
         list-style-type: none;
         line-height: 50px;
         align-items: center;
         padding-left: 70%;		
-        margin-right: 15%;
+        margin-right: 2%;
+        margin-left:auto;
              
     }
     
@@ -117,6 +123,8 @@
     }
     .checkbtn {
         padding-top: 4px;
+        padding-left: 2%;
+        padding-bottom:0;
         margin-right: 20px;
         cursor: pointer;
         display: none;
@@ -186,7 +194,7 @@
 	
 	.section-dark {
 		background-color: #54c3c0;
-		color: #white;
+		color: white;
 	}
 	
 	p {
