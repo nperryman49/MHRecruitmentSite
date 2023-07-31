@@ -322,7 +322,7 @@ background-attachment: fixed;
     ul.header {
         float: right;
         position: fixed;
-          
+        margin-right: 2%;  
     }
 
     .icon {
