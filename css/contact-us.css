@@ -198,6 +198,10 @@ p {
 		
 	}
 
+	.header img{
+		margin-left: auto;
+	}
+
 	ul.header{
 		float: right;
 		position: fixed;

@@ -75,8 +75,8 @@
         list-style-type: none;
         line-height: 50px;
         align-items: center;
-        padding-left: 70%;		
-        margin-right: 15%;
+        margin-left: auto;		
+        margin-right: 2%;
              
     }
     
@@ -108,7 +108,8 @@
         text-align: center;
         font-size: 18px;
         line-height: 40px;
-        padding: 0px 15px;			
+        padding: 0px 15px;	
+        background-color: #19226d;		
     }
     
     .navbar a:hover {
@@ -296,11 +297,15 @@
             background-color: white;
             
         }
+        .header img{
+            padding: 0;
+            margin: 0;
+        }
     
         ul.header{
             float: right;
             position: fixed;
-            margin-left: 30%;
+            
         }
         .icon {
             margin-left: 190%;
@@ -328,7 +333,7 @@
         .navbar ul {
             
             width: 100%;
-            background-color: #19226d;
+            background: #19226d;
             padding: 0;
             margin: 0;
         }
@@ -343,7 +348,7 @@
             top: 178px;
             display: flex;
             flex-direction: column;
-            background-color: #19226d;
+            background: #19226d;
                       
             
         }
