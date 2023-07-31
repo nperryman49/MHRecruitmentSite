@@ -16,6 +16,7 @@
 header ul {
         display: flex;
         float: right;
+		position: fixed;
         list-style-type: none;
         line-height: 50px;
         align-items: center;

@@ -4,20 +4,92 @@
 	margin: auto;
 	}
 	
-	  .header {
+	.header {
         height: 50px;
         background-color: lightgray;
         display: flex;
-        width: 1vw;
-        padding-right: 1em;
-        padding-left: 1em;
-        background-color: white;
-        
+        width:auto;
+            
+                       
+    }
+ 
+    
+    header img {
+     
+      float: left;
+      padding: 0;
+      margin-left: -280%;
+      padding-left: 2%;
+      
                   
+
+    }
+    img div.header{
+        position: fixed;
+        margin-left: 1%;
+    }
+
+    ul.header {
+               
+        display: flex;
+        float: right; 
+        padding: 0;
+        margin-right: 2%;
+        
+      
+    }
+
+    header ul {
+            
+        align-items: center;
+        position: fixed;
+        list-style-type: none;
+        display: flex;
+        float: right; 
+        line-height: 50px;
+        padding: 0;
+        margin-right: 2%;
+        margin-left: 93%;
+            
+       
     }
     
-    .header img{
-        float: left;
+    .icon {
+        padding: 1em 10px;
+        padding-right: 20px;    
+    }
+    
+    
+  
+    
+	
+	.navbar ul {
+        display: flex;
+        justify-content: space-around;
+        height: 40px;
+        background-color: #19226d;
+        list-style-type: none;
+        padding: 0px 1em;
+        margin: 0px;
+        width:auto;
+        
+        
+    }
+	
+    .navbar a {
+        display: block;
+        color: white; 
+        text-decoration: none;
+        text-align: center;
+        font-size: 18px;
+        line-height: 40px;
+        padding: 0px 15px;	
+        		
+    }
+    
+    .navbar a:hover {
+        background: #ddd;
+        color: black;
     }
 	
 	    .slider-container {
@@ -73,58 +145,9 @@
         background-color:#19226d;
    }
 	
-    header ul {
-        display: flex;
-        float: right;
-        position: fixed;
-        list-style-type: none;
-        line-height: 50px;
-        align-items: center;
-        margin-left: auto;		
-        margin-right: 2%;
-             
-    }
     
-    .icon {
-        padding: 1em 10px;
-        padding-right: 20px;    
-    }
-    
-    
-  
-    
-	
-	    .navbar ul {
-        display: flex;
-        justify-content: space-around;
-        height: 40px;
-        background-color: #19226d;
-        list-style-type: none;
-        padding: 0px 1em;
-        margin: 0px;
-        width:auto;
-        
-    }
-	
-    .navbar a {
-        display: block;
-        color: white; 
-        text-decoration: none;
-        text-align: center;
-        font-size: 18px;
-        line-height: 40px;
-        padding: 0px 15px;	
-        background-color: #19226d;		
-    }
-    
-    .navbar a:hover {
-        background: #ddd;
-        color: black;
-    }
     .checkbtn {
         padding-top: 4px;
-        padding-left: 2%;
-        padding-bottom:0;
         margin-right: 20px;
         cursor: pointer;
         display: none;
@@ -142,7 +165,7 @@
 		font-weight: 400;
 		line-height: 1.8em;
 		color: #54c3c0;
-		background-color: 902683;
+		
 	}
 	
 	.pimg1, .pimg2, .pimg3, .pimg4 {
@@ -287,37 +310,46 @@
     }
 }
 	
-	@media(max-width:568px){
+@media(max-width:568px){
 		.pimg1, .pimg2, .pimg3{
 		background-attachment: scroll;	
 		}
 	}
 	
-    @media(max-width: 570px){
+@media(max-width: 570px){
         .pimg1, .pimg2, .pimg3{
             background-attachment: scroll;	
             }
         .header {
-            width: 1vw;
+            width: 100%;
             padding-right: 1em;
             padding-left: 1em;
             background-color: white;
             
         }
         .header img{
-            padding: 0;
-            margin: 0;
+               
+            float: left;
+            margin-left: -90%;    
+                        
+                      
         }
     
-        ul.header{
-            float: right;
+        header ul{
+           
+            float: right;     
             position: fixed;
+            margin-left: 70%;
             
         }
+
         .icon {
-            margin-left: 190%;
-            padding-right: 15px;
+                      
+            padding-right: 10px; 
+            
+          
         }
+       
 
 
         
@@ -356,12 +388,14 @@
             display: flex;
             flex-direction: column;
             background: #19226d;
+            width: 100%;
                       
             
         }
         nav ul li {
             display: block;
             background-color: #19226d;
+            width: 100%;
         }
        
         nav ul li a {
@@ -372,3 +406,13 @@
         }
        
     }
+    @media(min-width: 571px)(max-width: 900px){
+        .header img{
+               
+            float: left;      
+                             
+                      
+        }
+    }
+
+   
