@@ -204,6 +204,9 @@
         background-color: black;
         color: white;
     }
+    a:link, a:visited {
+        color:  #54c3c0;
+        }
     
     
     
@@ -285,6 +288,9 @@
             display:block;
                       
         }
+        a:link, a:visited {
+            color:  #54c3c0;
+            }
     }
     
     
