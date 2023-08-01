@@ -282,6 +282,11 @@
 #h2-dollar{
     text-align: center;
 }
+.usMap{
+    display: flex;
+}
+
+
 
 @media(max-width: 570px){
     .image-container{
@@ -291,6 +296,9 @@
     }
     .text-overlay{
         top:30%;
+    }
+    .usMap{
+        width:500px;
     }
 }
 	

@@ -1,5 +1,5 @@
 * {
-    font-family: "Arial", sans-serif;
+    font-family: "Brown", "Arial", sans-serif;
     }
     
 .header {
@@ -12,7 +12,8 @@
     
 .header img{
         float: left;
-}
+    }
+
 header ul {
         display: flex;
         float: right;
