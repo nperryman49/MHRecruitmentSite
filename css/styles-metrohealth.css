@@ -128,15 +128,7 @@
         
     }
     
-    .JFimages {
-        float: left;
-        width: 30%;
-        padding: 1em 1em;
-        margin: 1em 1em;
-        height: auto;
-        
-        
-    }
+
     .section-light{
         background-color: #632d80;
         color: #f4f4f4;
@@ -284,6 +276,9 @@
         .HEAP {
             display:block;
                       
+        }
+        .ptext .border{
+            line-height: 80px;
         }
     }
     

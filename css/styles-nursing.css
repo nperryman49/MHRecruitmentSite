@@ -170,10 +170,7 @@ header ul {
     width: 100%;
 }
 
-.research {
-    color: white;
-    background-color: black;
-}
+
 
 .pimg1, .pimg2, .pimg3{
 	position: relative;
@@ -326,7 +323,7 @@ background-attachment: fixed;
     }
 
     .icon {
-        padding-left: 190%;
+        padding-left: 230%;
         padding-right: 25px;
     }
 
@@ -391,9 +388,9 @@ background-attachment: fixed;
         text-align: center;
     }
 
-    .border .border.trans {
-        word-wrap: break-word;
-    }
+    .ptext .border{
+		line-height: 80px;
+	}
    
 	
 }

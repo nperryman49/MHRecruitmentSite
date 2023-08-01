@@ -12,47 +12,31 @@
             
                        
     }
- 
+
+   div.header a{
+    margin-left: 0;
+   }
     
-    header img {
-     
-      float: left;
-      padding: 0;
-      margin-left: -280%;
-      padding-left: 2%;
+    .header img {
       
-                  
-
+       float: left;
+         
     }
-    img div.header{
-        position: fixed;
-        margin-left: 1%;
-    }
+   
 
-    ul.header {
-               
-        display: flex;
-        float: right; 
-        padding: 0;
-        margin-right: 2%;
-        
-      
-    }
-
+          
     header ul {
-            
-        align-items: center;
-        position: fixed;
-        list-style-type: none;
         display: flex;
-        float: right; 
+        float: right;
+        list-style-type: none;
         line-height: 50px;
-        padding: 0;
-        margin-right: 2%;
-        margin-left: 93%;
+        align-items: center;
+        margin-left: auto;
+        margin-right: 3%;
             
        
     }
+
     
     .icon {
         padding: 1em 10px;
@@ -330,7 +314,7 @@
         .header img{
                
             float: left;
-            margin-left: -90%;    
+            margin-left: -10%;    
                         
                       
         }
@@ -339,13 +323,14 @@
            
             float: right;     
             position: fixed;
-            margin-left: 70%;
+            margin-left: 50%;
             
         }
 
         .icon {
                       
-            padding-right: 10px; 
+            padding-left: 150%;          
+            padding-right: 20px; 
             
           
         }

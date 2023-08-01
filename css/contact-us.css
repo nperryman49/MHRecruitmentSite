@@ -8,24 +8,21 @@
         display: flex;
         width: auto;
         
-    }
+}
     
 .header img{
         float: left;
-    }
+}
 header ul {
         display: flex;
         float: right;
-		position: fixed;
-        list-style-type: none;
+		list-style-type: none;
         line-height: 50px;
         align-items: center;
-        margin-left: auto;		
-        margin-right: 2%;
-		
+        margin-left: auto;
+	    margin-right: 2%; 
         
-        
-    }
+}
     
 .icon {
         padding: 1em 10px;
@@ -195,7 +192,7 @@ p {
 		width: 1vw;
 		padding-right: 1em;
 		padding-left: 1em;
-		background: white;
+		background-color: white;
 		
 	}
 
@@ -206,11 +203,14 @@ p {
 	ul.header{
 		float: right;
 		position: fixed;
+		margin-left: 80%;
+	    margin-right: 2%;
 		
 	}
+
 	.icon {
-		margin-left: 190%;
-		padding-right: 15px;
+		padding-left: 250%;
+		padding-right: 23px;
 	}
 
 	.checkbtn {
