@@ -60,6 +60,9 @@
         background: #ddd;
         color: black;
     }
+    .navbar a:link, a:visited{
+        color: white;
+    }
     .checkbtn {
         padding-top: 4px;
         margin-right: 20px;
@@ -181,6 +184,10 @@
     }
     ul.RBGList {
         list-style-type: none;
+        
+    }
+    ul.RGBList a:link, a:visited{
+        color:  #54c3c0;
     }
      
     .ptext {
@@ -204,9 +211,7 @@
         background-color: black;
         color: white;
     }
-    a:link, a:visited {
-        color:  #54c3c0;
-        }
+   
     
     
     
@@ -288,9 +293,7 @@
             display:block;
                       
         }
-        a:link, a:visited {
-            color:  #54c3c0;
-            }
+        
     }
     
     
