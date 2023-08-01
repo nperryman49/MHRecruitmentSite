@@ -186,7 +186,7 @@
         list-style-type: none;
         
     }
-    ul.RGBList a:link, a:visited{
+    .RBGList a:link, .RBGList a:visited{
         color:  #54c3c0;
     }
      
