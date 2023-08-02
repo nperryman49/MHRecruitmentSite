@@ -52,6 +52,7 @@ information.push(resume);
    // })
 //}
  //more comments to test hershy pull button
+ //comment so hershey can see syncr changes
 // Write data in 'Output.txt' .
 }
 }
