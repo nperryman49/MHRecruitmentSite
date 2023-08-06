@@ -1,22 +1,27 @@
 <?php
 
-$email=$_Post['email'];
-$text=$_Post['lname'];
-$text=$_Post['fname'];
-$tel=$_Post['phone'];
-$text=$_Post['country_code'];
-$file=$_Post['files'];
-$nurse_status=$_Post['Nurse_Status'];
-$date=$_Post['datemin'];
-$time=$_Post['appt'];
-$date=$_Post['datemin'];
-$time=$_Post['appt'];
-$appt=$_Post['appt'];
-$data=$email."," $text."," $text."," $tel."," $text."," $file."," $nurse_status."," $date."," $time."," $date."," $time."," $appt;
+$email=$_POST['email'];
+$lname=$_POST['lname'];
+$fname=$_POST['fname'];
+$tel=$_POST['phone'];
+$text=$_POST['country_code'];
+$file=$_POST['files'];
+$nurse_status=$_POST['Nurse_Status'];
+$datemin=$_POST['datemin'];
+$timemin=$_POST['appt'];
+$datemax=$_POST['datemin'];
+$timemax=$_POST['appt'];
+$appt=$_POST['appt'];
+$data=$email."," $lname."," $fname."," $tel."," $text."," $file."," $nurse_status."," $datemin."," $timemin."," $datemax."," $timemax."," $appt.;
 
-$file="nurseinfo.xlsx";
+$file="nurseinfo.csv";
+$appendinfo = fopen($file, 'a');
+fwrite($appendinfo, $data);
+fclose($appendinfo);
 
-file_put_contents($file, $data . PHP_EOL, FILE_APPEND);
+
+
+# file_put_contents($file, $data . PHP_EOL, FILE_APPEND);
 print "<h1 align=center>Thank you for submitting your contact information! a recruiter will contact you shortly.</h1>";
 
 ?>
