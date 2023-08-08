@@ -146,7 +146,7 @@
         width: 30%;
         margin: 3em 2em;
         height: auto; 
-        padding: 0 1em;
+        padding: 0 2em;
         padding-right: 10em;
         
        
@@ -280,6 +280,10 @@
         }
         #check:checked ~ ul{
             left: 0;
+        }
+        iframe{
+            width: 550px;
+            height: auto;
         }
         .HEAP {
             display:block;
