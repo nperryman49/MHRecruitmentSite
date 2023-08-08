@@ -109,17 +109,17 @@
     }
     
     .pimg1 {
-        background-image:url('../images/glickcenter.jpeg');
+        background-image:url('../images/campus\ historical\ aerial005.jpg');
         min-height: 100%;
     }
     
     .pimg2 {
-        background-image:url('../images/cleveland-skyline-feat.jpeg');
+        background-image:url('../images/Metro\ Health\ Resiliency\ Run-127.jpg');
         min-height: 400px;
     }
     
     .pimg3 {
-        background-image: url('../images/metrobh3.png');
+        background-image: url('../images/20200618-Juneteenth\ Event-629.jpg');
         min-height: 400px;
     }
     
@@ -146,7 +146,7 @@
         width: 30%;
         margin: 3em 2em;
         height: auto; 
-        padding: 0 1em;
+        padding: 0 2em;
         padding-right: 10em;
         
        
@@ -280,6 +280,10 @@
         }
         #check:checked ~ ul{
             left: 0;
+        }
+        iframe{
+            width: 550px;
+            height: auto;
         }
         .HEAP {
             display:block;

@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="css/cleveland.css">
 <script src="js/cleveland.js"></script>
 <script src="https://kit.fontawesome.com/yourcode.js"></script>
-<title>Welcome to MetroHealth</title>
+<title>Cleveland</title>
 </head>
 <header>
 	<div class="header">
@@ -41,6 +41,14 @@
 			<li><a href="index.html">Home</a></li>
 		  </ul>
 		</nav>
+	
+		<div class="pimg1">
+			<div class="ptext">
+			<span class="border">The best location in the nation.</span> 
+			</div>
+		</div>
+
+		
 	  
 	<div class="slider-container">
 	<ul class="slideWrap">
@@ -68,13 +76,7 @@
 			
 	</li>
 	</ul>
-	
 	</div>
-
-        <div class="pimg1">
-        <div class="ptext">
-            <span class="border">The best location in the nation.</span> 
-        </div>
 	
 
 <div style="text-align: center;">
@@ -104,41 +106,52 @@
         </section>
 		<section>
 			<h2 id="h2-dollar">How Much Is Your Dollar Worth?</h2>
-			<div class ="button-container">
-				<button onclick="changeImageWidth(1.13,'$1.13')">In Ohio</button>
-				<button onclick="changeImageWidth(.86,'$0.86')">In New York</button>
-				<button onclick="changeImageWidth(1.03,'$1.03')">In Texas</button>
-				<button onclick="changeImageWidth(.99,'$0.99')">In Florida</button>
-				<button onclick="changeImageWidth(1.03,'$1.03')">In Pennsylvania</button>
-			</div>
+			
 			<div class="image-container">
 				<img id="main-img" src="images/us_dollar.png" alt="U.S Dollar" width="500px" height="250px"/> 
 				<div class="text-overlay">$1.00</div>
 			</div>
-			<script>
-				function changeImageWidth(scaleX,dollarText){
-					const image = document.querySelector("#main-img");
-					image.style.scale= `${scaleX}`
-			
-					document.querySelector(".text-overlay").innerHTML = dollarText;
-			
-					const buttons = document.querySelectorAll('.button-container button');
-					buttons.forEach(button => {
-						button.classList.remove('active');
-					});
-			
-					event.target.classList.add('active');
-			
-			
-				}
-			</script>
-			
+
 			</section>
 			<section>
 				<div class = "usMap">
-					<object type="image/svg+xml" data="svg/map.svg" class="logo">
+					<object type="image/svg+xml" data="svg/map.svg" class="logo" id="svg-object">
 						United States
 						</object>
+						
+						<script>
+							const svgObject = document.getElementById("svg-object");
+							
+							svgObject.addEventListener("load",function(){
+
+								const svgDocument = svgObject.contentDocument;
+								if(svgDocument)
+								{
+									// Get all the SVG path elements within the SVG document
+									const svgPaths = svgDocument.querySelectorAll("path");
+									
+									svgPaths.forEach(path => 
+									{
+										path.addEventListener("mouseover", () =>
+										 {
+											path.style.fill = "#4cb549"; // Change fill color when hovered
+											document.querySelector(".text-overlay").innerHTML = path.id;
+										 });
+						
+										path.addEventListener("mouseout", () =>
+										 {
+										   path.style.fill = "#632d80"; // Reset fill color when not hovered
+										   document.querySelector(".text-overlay").innerHTML = "$1.00";
+
+										 });
+									});
+
+								}else{
+									console.log("SVG document is null")
+								}
+							})
+														
+						</script>
 				</div>
 			</section>
         <div class="pimg3">
