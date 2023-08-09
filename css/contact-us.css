@@ -69,12 +69,14 @@ header ul {
 #check {
         display: none;
     }
-body {
-	background-image: url("../images/glickcenter.jpeg");
+
+	body {
+	background-color: white;
 	background-repeat: no-repeat;
 	opacity: 1.0;
 	background-size:cover;
     margin: 0;
+	color:  black;
 	}
 
 .form {
@@ -98,13 +100,21 @@ select {
 	margin: auto;
 }
 
-label, select {
+ select {
 	color: white;
 	font-size: 18px;
 	font-family: "Brown", "Arial" sans-serif;
 	font-weight: bold;
 	opacity: 1.0;
     
+}
+
+label {
+	color: black;
+	font-size: 18px;
+	font-family: "Brown", "Arial" sans-serif;
+	font-weight: bold;
+	opacity: 1.0;
 }
 
 [type=file] {
