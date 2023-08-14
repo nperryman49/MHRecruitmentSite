@@ -174,12 +174,11 @@ header ul {
 	height: 100%;
     margin: 0;
     font-size: 30px;
-	text-decoration: underline;
+	text-decoration: none;
 	text-align: center;
     font-family: "Brown", "Arial" sans-serif;
-    font-weight: 400;
     line-height: 1.8em;
-    color: #54c3c0;
+    color: #19226d;
     background-color: 902683;
 }
 
