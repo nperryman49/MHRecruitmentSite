@@ -8,9 +8,7 @@
         height: 50px;
         background-color: lightgray;
         display: flex;
-        width:auto;
-            
-                       
+        width: auto;
     }
 
    div.header a{
@@ -158,13 +156,14 @@
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
-	
+        background-attachment: fixed;
+    }
 	
 	/*	fixed = parallax
 		scroll = normal
 	*/
-	background-attachment: fixed;
-	}
+	
+	
 	
 	.pimg1 {
 		background-image: url('../images/orchestra.jpg');
@@ -224,7 +223,7 @@
 		text-transform: uppercase;
 	}
 	
-	 .ptext .border{
+	 .ptext .border {
 		background-color: black;
 		color: #fff;
 		padding: 20px; 
