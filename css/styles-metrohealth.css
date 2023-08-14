@@ -151,7 +151,11 @@
         
        
     }
-
+    .Steed {
+        float: left;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
   
     #Why_Cleveland {
     background-color:#54c3c0;
