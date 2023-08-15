@@ -94,7 +94,7 @@
         margin-bottom: 1em;
     }
     
-    .pimg1, .pimg2, .pimg3{
+    .pimg1, .pimg2, .pimg3, .pimg4{
         position: relative;
         opacity: 0.70;
         background-position: center;
@@ -122,6 +122,11 @@
         background-image: url('../images/20200618-Juneteenth\ Event-629.jpg');
         min-height: 400px;
     }
+
+    .pimg4 {
+		background-image: url('../images/Broadway\ Exterior03.jpg');
+		min-height: 100%;
+	}
     
     .section {
         text-align: center;
@@ -151,7 +156,11 @@
         
        
     }
-
+    .Steed {
+        float: left;
+        padding-bottom: 0;
+        margin-bottom: 0;
+    }
   
     #Why_Cleveland {
     background-color:#54c3c0;

@@ -22,7 +22,7 @@ fclose($appendinfo);
 
 
 # file_put_contents($file, $data . PHP_EOL, FILE_APPEND);
-print "<h1 align=center>Thank you for submitting your contact information! a recruiter will contact you shortly.</h1>";
+print "<h1 align=center>Thank you for submitting your contact information! A recruiter will contact you shortly.</h1>";
 
 ?>
 <html>
